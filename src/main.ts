@@ -20,3 +20,16 @@ mobileMenuButton.addEventListener("click", (event) => {
     navBars.classList.add("block");
   }
 });
+
+const projectVideoes = document.querySelectorAll("[id=project-video]");
+for (const projectVideo of projectVideoes) {
+  if (!(projectVideo instanceof HTMLVideoElement)) continue;
+  const video = projectVideo as HTMLVideoElement;
+  video.addEventListener("mouseenter", () => {
+    video.play();
+  });
+  video.addEventListener("mouseleave", () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+}
