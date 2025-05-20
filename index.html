@@ -16,15 +16,20 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&text=menu,mail&display=block"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="/favicon.png" />
 
-    <script type="module" crossorigin src="/assets/index-C8QZIXZz.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-6F_fpDrL.css">
+    <script type="module" crossorigin src="/assets/index-B7SEDwdL.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-INnxKBsc.css">
   </head>
   <body>
     <header class="w-full">
       <div class="max-w-[900px] ml-auto mr-auto">
         <nav class="w-full relative inline-flex justify-between p-4">
-          <h1 class="text-2xl">BoonHianLim</h1>
+          <div class="flex gap-4 items-center">
+            <img src="/icon-transparent.png" class="w-[50px] h-[50px]" />
+            <h1 class="text-2xl">BoonHianLim</h1>
+          </div>
+
           <div class="hidden md:block">
             <ul class="flex gap-8">
               <li>
@@ -41,14 +46,14 @@
               </li>
             </ul>
           </div>
-          <div class="block md:hidden">
+          <div class="h-full md:hidden flex items-center text-center">
             <button
               id="mobile-menu-button"
               type="button"
-              class="cursor-pointer"
+              class="cursor-pointer flex items-center text-center h-full"
             >
               <span
-                class="material-symbols-outlined text-neutral-100 hover:text-neutral-400"
+                class="material-symbols-outlined material-icons md-42 text-neutral-100 hover:text-neutral-400"
               >
                 menu
               </span>
@@ -59,7 +64,7 @@
           <a href="#"
             ><div
               id="mobile-nav-bar"
-              class="w-full bg-gray-800 hover:bg-gray-700 h-10 text-center content-center"
+              class="w-full bg-gray-800 hover:bg-gray-700 h-12 text-center content-center text-xl"
             >
               Home
             </div></a
@@ -67,7 +72,7 @@
           <a href=""
             ><div
               id="mobile-nav-bar"
-              class="w-full bg-gray-800 hover:bg-gray-700 h-10 text-center content-center"
+              class="w-full bg-gray-800 hover:bg-gray-700 h-12 text-center content-center text-xl"
             >
               About
             </div></a
@@ -75,7 +80,7 @@
           <a href="#projects"
             ><div
               id="mobile-nav-bar"
-              class="w-full bg-gray-800 hover:bg-gray-700 h-10 text-center content-center"
+              class="w-full bg-gray-800 hover:bg-gray-700 h-12 text-center content-center text-xl"
             >
               Projects
             </div></a
@@ -83,7 +88,7 @@
           <a href="#footer"
             ><div
               id="mobile-nav-bar"
-              class="w-full bg-gray-800 hover:bg-gray-700 h-10 text-center content-center"
+              class="w-full bg-gray-800 hover:bg-gray-700 h-12 text-center content-center text-xl"
             >
               Contact
             </div></a
@@ -117,7 +122,7 @@
       <br />
       <hr />
       <div class="pt-4 pb-4">
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
           <div class="flex flex-col items-left">
             <h1 class="text-4xl">Python</h1>
             <p>3 Years Experience</p>
@@ -139,7 +144,7 @@
             <p>23 Years Experience</p>
           </div>
           <div class="flex flex-col items-left">
-            <h1 class="text-4xl">Persistence</h1>
+            <h1 class="text-4xl">Grit</h1>
             <p>Forever</p>
           </div>
         </div>
@@ -175,10 +180,10 @@
               >
                 <img
                   src="https://boonhianlim.github.io/beyond-code/static/images/motivation.png"
-                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inset-0 group-hover:opacity-0 transition-opacity"
+                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 group-hover:opacity-0 transition-opacity"
                 />
                 <video
-                  class="max-h-[300px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 inset-0 video opacity-0 object-cover transition-opacity group-hover:opacity-100"
+                  class="max-h-[300px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 video opacity-0 object-cover transition-opacity group-hover:opacity-100"
                   muted
                   loop
                   autoplay
@@ -201,7 +206,9 @@
               >
             </p>
             <div class="h-[8px]"></div>
-            <div class="flex gap-8 w-full items-center justify-center">
+            <div
+              class="grid gap-4 grid-cols-1 md:flex md:gap-8 md:justify-center w-full items-center justify-items-center"
+            >
               <a href="">
                 <button
                   class="w-[200px] border py-2 px-4 rounded-full cursor-pointer"
