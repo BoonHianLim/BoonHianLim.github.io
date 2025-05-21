@@ -1,10 +1,54 @@
 @import "tailwindcss";
 
 body {
-    background: oklch(13% 0.028 261.692);
-    color: oklch(96.7% 0.003 264.542);
+  @apply bg-gray-950 text-gray-100;
 }
 
+.mobile-nav-bar {
+  @apply w-full bg-gray-800 hover:bg-gray-700 h-12 text-center content-center text-xl;
+}
+
+.project-subsection {
+  @apply grid gap-2 w-full bg-inherit px-4;
+}
+.project-subsection .title {
+  @apply w-full text-2xl font-semibold;
+}
+
+.project-subsection .motivation {
+  @apply w-full text-xl;
+}
+
+.project-subsection .motivation .emphasis {
+  @apply text-emerald-400;
+}
+
+.project-subsection .description {
+  @apply w-full relative bg-inherit;
+}
+.project-subsection .description .description-text {
+  @apply text-lg;
+}
+
+.project-subsection .description .clamp {
+  @apply line-clamp-3;
+}
+
+.project-subsection .description .see-more {
+  @apply absolute bottom-0 right-0 pl-[16px] underline bg-inherit decoration-emerald-400 underline-offset-4 text-lg;
+}
+
+.project-subsection .buttons {
+  @apply grid gap-4 grid-cols-1 md:flex md:gap-8 md:justify-center w-full items-center justify-items-center pt-[8px] pb-[12px];
+}
+
+.project-subsection .buttons .button {
+  @apply w-[200px] border py-2 px-4 rounded-full cursor-pointer hover:bg-gray-800 transition duration-300;
+}
+
+.project-subsection .buttons .button .button-content {
+  @apply flex items-center justify-center gap-4;
+}
 .material-icons.md-42 {
-    font-size: 42px;
+  font-size: 42px;
 }
