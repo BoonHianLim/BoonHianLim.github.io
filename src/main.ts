@@ -33,3 +33,29 @@ for (const projectVideo of projectVideoes) {
     video.currentTime = 0;
   });
 }
+
+const projectSeeMoreLinks = document.querySelectorAll(
+  ".project-subsection .description .see-more"
+);
+for (const projectSeeMoreLink of projectSeeMoreLinks) {
+  if (!(projectSeeMoreLink instanceof HTMLAnchorElement)) continue;
+  const seeMoreLink = projectSeeMoreLink as HTMLAnchorElement;
+  seeMoreLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    const currentTarget = event.currentTarget as HTMLAnchorElement;
+    if (!(currentTarget instanceof HTMLAnchorElement)) return;
+
+    const nearbyDescription = Array.from(
+      currentTarget.parentNode?.children || []
+    ).find((child) => {
+      return child.classList.contains("description-text");
+    });
+
+    if (!(nearbyDescription instanceof HTMLParagraphElement)) return;
+
+    nearbyDescription.classList.remove("clamp");
+    currentTarget.classList.add("hidden");
+  });
+}
+
+

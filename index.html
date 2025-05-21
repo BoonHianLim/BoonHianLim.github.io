@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Boon Hian Lim</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Boon Hian Lim" />
@@ -30,19 +31,23 @@
             <h1 class="text-2xl">BoonHianLim</h1>
           </div>
 
-          <div class="hidden md:block">
+          <div class="hidden md:flex md:items-center md:justify-center">
             <ul class="flex gap-8">
               <li>
-                <a href="#" class="text-2xl"> Home </a>
+                <a href="#" class="text-2xl hover:text-gray-400"> Home </a>
               </li>
               <li>
-                <a href="" class="text-2xl"> About </a>
+                <a href="" class="text-2xl hover:text-gray-400"> About </a>
               </li>
               <li>
-                <a href="#projects" class="text-2xl"> Projects </a>
+                <a href="#projects" class="text-2xl hover:text-gray-400">
+                  Projects
+                </a>
               </li>
               <li>
-                <a href="#footer" class="text-2xl"> Contact </a>
+                <a href="#footer" class="text-2xl hover:text-gray-400">
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -61,42 +66,14 @@
           </div>
         </nav>
         <div id="mobile-nav-bars" class="hidden md:hidden" expand="false">
-          <a href="#"
-            ><div
-              id="mobile-nav-bar"
-              class="w-full bg-gray-800 hover:bg-gray-700 h-12 text-center content-center text-xl"
-            >
-              Home
-            </div></a
-          >
-          <a href=""
-            ><div
-              id="mobile-nav-bar"
-              class="w-full bg-gray-800 hover:bg-gray-700 h-12 text-center content-center text-xl"
-            >
-              About
-            </div></a
-          >
-          <a href="#projects"
-            ><div
-              id="mobile-nav-bar"
-              class="w-full bg-gray-800 hover:bg-gray-700 h-12 text-center content-center text-xl"
-            >
-              Projects
-            </div></a
-          >
-          <a href="#footer"
-            ><div
-              id="mobile-nav-bar"
-              class="w-full bg-gray-800 hover:bg-gray-700 h-12 text-center content-center text-xl"
-            >
-              Contact
-            </div></a
-          >
+          <a href="#"><div class="mobile-nav-bar">Home</div></a>
+          <a href=""><div class="mobile-nav-bar">About</div></a>
+          <a href="#projects"><div class="mobile-nav-bar">Projects</div></a>
+          <a href="#footer"><div class="mobile-nav-bar">Contact</div></a>
         </div>
       </div>
     </header>
-    <div class="max-w-[900px] ml-auto mr-auto grid p-4">
+    <div class="max-w-[900px] ml-auto mr-auto grid p-4 bg-inherit">
       <div class="">
         <h1 class="text-4xl">Nice to meet you!</h1>
         <h1 class="text-4xl">
@@ -151,32 +128,35 @@
       </div>
       <hr />
       <br />
-      <div class="" id="projects">
+      <div class="bg-inherit" id="projects">
         <!-- Project Section Title-->
         <div class="w-full relative justify-between inline-flex">
-          <p class="text-4xl">Projects</p>
+          <p class="text-3xl font-semibold">Projects</p>
           <a href="https://github.com/boonhianlim"
             ><p
-              class="underline text-2xl decoration-emerald-400 underline-offset-8"
+              class="underline text-2xl decoration-emerald-400 underline-offset-8 hover:text-gray-400"
             >
-              See More
+              Show All
             </p></a
           >
         </div>
-        <br />
         <!-- Project Section Content-->
-        <div class="grid gap-12 pt-8">
+        <div class="grid gap-8 pt-8 bg-inherit">
           <!-- FYP -->
-          <div class="grid gap-1 w-full">
-            <p class="w-full text-2xl font-semibold">
+          <div class="project-subsection">
+            <p class="title">
               Beyond Code: A Comprehensive Study on Website Builders
             </p>
-            <p class="w-full text-xl">
-              What can be done with website builders?
+            <p class="motivation">
+              Still wrestling with website builders? <br />
+              Let your designs do the heavy lifting —
+              <em class="emphasis">auto-generate sites from sketches</em>.
             </p>
-            <div class="flex w-full items-center justify-center">
+            <div
+              class="flex w-full items-center justify-center pt-[8px] pb-[8px]"
+            >
               <div
-                class="relative w-full max-w-[800px] h-[300px] transform transition-transform group"
+                class="relative w-full max-w-[868px] h-[300px] transform transition-transform group"
               >
                 <img
                   src="https://boonhianlim.github.io/beyond-code/static/images/motivation.png"
@@ -196,42 +176,164 @@
                 </video>
               </div>
             </div>
-            <p class="w-full text-lg">
-              A description is merely for an introduction for the interested
-              visitors to click and view more.
-              <a
-                href=""
-                class="underline decoration-emerald-400 underline-offset-4"
-                >More Details</a
-              >
-            </p>
-            <div class="h-[8px]"></div>
-            <div
-              class="grid gap-4 grid-cols-1 md:flex md:gap-8 md:justify-center w-full items-center justify-items-center"
-            >
-              <a href="">
-                <button
-                  class="w-[200px] border py-2 px-4 rounded-full cursor-pointer"
-                >
-                  <div class="flex items-center justify-center gap-4">
-                    <img src="/src/static/images/github.png" class="w-[30px]" />
+            <div class="description">
+              <p class="description-text clamp">
+                Current website builders fall short—limited extensibility, weak
+                documentation, and poor version control. We proposed to solve
+                them with automated frontend UI generation from sketches or
+                partial designs, integrating Git, and auto-generating
+                documentation. In our experiments, we find even partial sketches
+                are enough for LLMs to accurately generate usable UI components
+                based on design and code context.
+              </p>
+              <a href="" class="see-more">...see more</a>
+            </div>
+            <div class="buttons">
+              <a href="https://boonhianlim.github.io/beyond-code/">
+                <button class="button">
+                  <div class="button-content">
+                    <img src="/src/static/images/demo.png" class="w-[30px]" />
                     Live Demo
                   </div>
                 </button>
               </a>
 
-              <a href="">
-                <button
-                  class="w-[200px] border py-2 px-4 rounded-full cursor-pointer"
-                >
-                  <div class="flex items-center justify-center gap-4">
+              <a href="https://boonhianlim.github.io/beyond-code/">
+                <button class="button">
+                  <div class="button-content">
                     <img src="/src/static/images/github.png" class="w-[30px]" />
                     View Code
                   </div>
                 </button>
               </a>
             </div>
-            <div class="h-[8px]"></div>
+            <hr />
+          </div>
+          <!-- Smart Assistant -->
+          <div class="project-subsection">
+            <p class="title">GitHub Repository Smart Search 🧠🔍</p>
+            <p class="motivation">
+              Rethink how you search Github:
+              <em class="emphasis">Just say it in plain English</em>.
+            </p>
+            <div
+              class="flex w-full items-center justify-center pt-[8px] pb-[8px]"
+            >
+              <div
+                class="relative w-full max-w-[868px] h-[300px] transform transition-transform group"
+              >
+                <img
+                  src="https://boonhianlim.github.io/beyond-code/static/images/motivation.png"
+                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 group-hover:opacity-0 transition-opacity"
+                />
+                <video
+                  class="max-h-[300px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 video opacity-0 object-cover transition-opacity group-hover:opacity-100"
+                  muted
+                  loop
+                  autoplay
+                  id="project-video"
+                >
+                  <source
+                    src="https://github.com/user-attachments/assets/3ca65375-9732-47b1-964c-8c32e7926723"
+                    type="video/mp4"
+                  />
+                </video>
+              </div>
+            </div>
+            <div class="description">
+              <p class="description-text clamp">
+                We build a Streamlit-based web application that allows users to
+                search for GitHub repositories using the GitHub API. It
+                leverages OpenAI's language models to enhance search
+                capabilities with features like keyword extraction, advanced
+                filtering, and summarization of repository content.
+              </p>
+              <a href="" class="see-more">...see more</a>
+            </div>
+            <div class="buttons">
+              <a href="https://gh-smart-search.streamlit.app/">
+                <button class="button">
+                  <div class="button-content">
+                    <img src="/src/static/images/demo.png" class="w-[30px]" />
+                    Live Demo
+                  </div>
+                </button>
+              </a>
+
+              <a href="https://github.com/BoonHianLim/github-smart-search">
+                <button class="button">
+                  <div class="button-content">
+                    <img src="/src/static/images/github.png" class="w-[30px]" />
+                    View Code
+                  </div>
+                </button>
+              </a>
+            </div>
+            <hr />
+          </div>
+
+          <!-- Mailmate -->
+          <div class="project-subsection">
+            <p class="title">Mailmate: AI-powered email assistant 🚀📨</p>
+            <p class="motivation">
+              Hate writing emails?
+              <em class="emphasis"
+                >Write down your thoughts, or let the moe* assistant to craft
+                the full message for you</em
+              >!
+            </p>
+            <div
+              class="flex w-full items-center justify-center pt-[8px] pb-[8px]"
+            >
+              <div
+                class="relative w-full max-w-[868px] h-[400px] transform transition-transform group"
+              >
+                <img
+                  src="src/static/animations/mailmate-mei.gif"
+                  class="preview-img max-h-[400px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 group-hover:opacity-0 transition-opacity"
+                />
+                <iframe
+                  height="400"
+                  id="mailmate-video"
+                  class="max-h-[400px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 video opacity-0 object-cover transition-opacity group-hover:opacity-100"
+                  src="https://www.youtube.com/embed/sRO23uTDpzY?enablejsapi=1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="description">
+              <p class="description-text clamp">
+                The Smart Email Assistant is a voice- and text-enabled
+                Streamlit-based SaaS platform designed to supercharge your email
+                productivity using LLMs. It combines AI-powered summarization,
+                smart replies, semantic search, calendar syncing, email
+                tracking, and virtual assistant capabilities into one
+                streamlined tool.
+              </p>
+              <a href="" class="see-more">...see more</a>
+            </div>
+            <div class="buttons">
+              <a href="https://mailmate.me/">
+                <button class="button">
+                  <div class="button-content">
+                    <img src="/src/static/images/demo.png" class="w-[30px]" />
+                    Live Demo
+                  </div>
+                </button>
+              </a>
+
+              <a href="https://github.com/BoonHianLim/mailmate">
+                <button class="button">
+                  <div class="button-content">
+                    <img src="/src/static/images/github.png" class="w-[30px]" />
+                    View Code
+                  </div>
+                </button>
+              </a>
+            </div>
             <hr />
           </div>
         </div>
@@ -294,4 +396,53 @@
       </div>
     </footer>
   </body>
+  <script>
+    const tag = document.createElement("script");
+    tag.id = "youtube-iframe-api";
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName("script")[0];
+    if (firstScriptTag) {
+      firstScriptTag.parentNode?.insertBefore(tag, firstScriptTag);
+    }
+    let player;
+
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player("mailmate-video", {
+        videoId: "sRO23uTDpzY",
+        playerVars: {
+          playsinline: 1,
+        },
+        events: {
+          onStateChange: (event) => {
+            if (event.data === YT.PlayerState.PLAYING) {
+              const iframe = document.getElementById("mailmate-video");
+              if (!iframe) return;
+
+              const nearbyImage = Array.from(
+                iframe.parentElement?.children || []
+              ).find((child) => {
+                return child.classList.contains("preview-img");
+              });
+              if (!nearbyImage) return;
+              iframe.setAttribute("has-played", "true");
+              nearbyImage.classList.add("hidden");
+              iframe.classList.remove("opacity-0");
+            } else if (event.data === YT.PlayerState.PAUSED) {
+              const iframe = document.getElementById("mailmate-video");
+              if (!iframe) return;
+              if (iframe.getAttribute("has-played") !== "true") return;
+              const nearbyImage = Array.from(
+                iframe.parentElement?.children || []
+              ).find((child) => {
+                return child.classList.contains("preview-img");
+              });
+              if (!nearbyImage) return;
+              nearbyImage.classList.remove("hidden");
+              iframe.classList.add("opacity-0");
+            }
+          },
+        },
+      });
+    }
+  </script>
 </html>
