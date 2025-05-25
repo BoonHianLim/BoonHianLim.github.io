@@ -74,7 +74,7 @@
       </div>
     </header>
     <div class="max-w-[900px] ml-auto mr-auto grid p-4 bg-inherit">
-      <div class="">
+      <div class="slide-right">
         <h1 class="text-4xl">Nice to meet you!</h1>
         <h1 class="text-4xl">
           I am
@@ -156,14 +156,16 @@
               class="flex w-full items-center justify-center pt-[8px] pb-[8px]"
             >
               <div
-                class="relative w-full max-w-[868px] aspect-[22/9] transform transition-transform group"
+                class="relative w-full max-w-[868px] aspect-video transform transition-transform group"
               >
-                <img
-                  src="https://boonhianlim.github.io/beyond-code/static/images/motivation.png"
-                  class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 group-hover:opacity-0 transition-opacity"
-                />
+                <div class="aspect-video bg-gray-800">
+                  <img
+                    src="https://boonhianlim.github.io/beyond-code/static/images/motivation.png"
+                    class="max-w-[868px] absolute aspect-auto top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 group-hover:opacity-0 transition-opacity"
+                  />
+                </div>
                 <video
-                  class="max-h-[300px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 video opacity-0 object-cover transition-opacity group-hover:opacity-100"
+                  class="max-w-[868px] aspect-video absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 video opacity-0 object-cover transition-opacity group-hover:opacity-100"
                   muted
                   loop
                   autoplay
@@ -220,14 +222,16 @@
               class="flex w-full items-center justify-center pt-[8px] pb-[8px]"
             >
               <div
-                class="relative w-full max-w-[868px] aspect-[22/9] transform transition-transform group"
+                class="relative w-full max-w-[868px] aspect-video transform transition-transform group"
               >
-                <img
-                  src="https://boonhianlim.github.io/beyond-code/static/images/motivation.png"
-                  class="max-h-[300px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 group-hover:opacity-0 transition-opacity"
-                />
+                <div class="aspect-video bg-gray-800">
+                  <img
+                    src="src/static/images/github-smart-search.png"
+                    class="max-w-[868px] aspect-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 group-hover:opacity-0 transition-opacity"
+                  />
+                </div>
                 <video
-                  class="max-h-[300px] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 video opacity-0 object-cover transition-opacity group-hover:opacity-100"
+                  class="max-w-[868px] aspect-video absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 video opacity-0 object-cover transition-opacity group-hover:opacity-100"
                   muted
                   loop
                   autoplay
@@ -293,10 +297,9 @@
                   class="preview-img aspect-video absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 group-hover:opacity-0 transition-opacity"
                 />
                 <iframe
-
                   id="mailmate-video"
                   class="aspect-video absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full inset-0 video opacity-0 object-cover transition-opacity group-hover:opacity-100"
-                  src="https://www.youtube.com/embed/sRO23uTDpzY?enablejsapi=1"
+                  src="https://www.youtube.com/embed/sRO23uTDpzY?enablejsapi=1&start=12&rel=0&widget_referrer=https%3A%2F%2Fboonhianlim.github.io"
                   title="YouTube video player"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

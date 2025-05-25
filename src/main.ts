@@ -58,4 +58,13 @@ for (const projectSeeMoreLink of projectSeeMoreLinks) {
   });
 }
 
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate-slide-right");
+      observer.unobserve(entry.target); // optional: stop observing after first animation
+    }
+  });
+});
 
+document.querySelectorAll(".slide-right").forEach((el) => observer.observe(el));
